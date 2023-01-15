@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+ 
+}
+
+
+a{
+    text-decoration: none;
+    outline:none;
+    color: black;
+}
+
+
+
+.header-opacity {
+    opacity: 0.8;
+}
+.mr-5{
+    margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: #0000009f;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #3f4558;
+    border-radius: 0.5rem;
+  }
+  
