@@ -60,13 +60,13 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
   padding: 0 10px;
   border-bottom: 1px solid #58555558;
 
 
   svg{
-      font-size: 25px;
+      font-size: 30px;
       cursor: pointer;
     }
 `
