@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Card from "./Card"
 
 const Main2 = () => {
   return (
@@ -19,6 +20,9 @@ const Main2 = () => {
 
         <Cursos>
             <Title2>CURSOS EN OFERTA</Title2>
+            <Card />
+            <Card />
+            <Card />
         </Cursos>
     </Container>
   )
@@ -26,9 +30,8 @@ const Main2 = () => {
 
 const Container = styled.div`
     background-color: #1f2023;
-    min-height: 200vh;
     color: white;
-
+    padding-bottom: 10px;
 `
 
 const InfoContainer = styled.div`
@@ -103,6 +106,7 @@ const Cursos = styled.div`
 
 const Title2 = styled.h3`
   text-align: center;
+  margin: 30px 0;
 `
 
 

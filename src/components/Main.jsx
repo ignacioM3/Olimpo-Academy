@@ -9,7 +9,7 @@ const Main = () => {
             <InfoContainer>
                 <Title>Potencia tus conocimientos!</Title>
                 <Description>
-                    En Olimpo Academy encontra los mejores cursos desde peluqueria, estética, auxiliar de enfermeria
+                    En Olimpo Academy encontra los mejores cursos desde peluqueria, estética, auxiliar de enfermeria,
                     agente sanitario, mécanica de motos, etc...
 
                     <Des>Cada <span>Logro</span> Comienza con la desición de <span>Intentarlo</span></Des>
