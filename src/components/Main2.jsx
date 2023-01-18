@@ -57,7 +57,7 @@ const Title = styled.h1`
 
 `
 const Description = styled.p  `
-padding-top: 10px;
+padding-top: 25px;
   font-size: 18px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -80,9 +80,10 @@ const ButtonContainer = styled.div`
   margin: 10px 0 40px;
 `
 const Button = styled.button`
-  padding: 8px;
+  padding: 12px;
   border: none;
   border-radius: 4px;
+  font-weight: 600;
   cursor: pointer;
   background-color: #19a05f;
   color: #373737;
@@ -106,7 +107,7 @@ const Cursos = styled.div`
 
 const Title2 = styled.h3`
   text-align: center;
-  margin: 30px 0;
+  margin: 30px 0 40px;
 `
 
 

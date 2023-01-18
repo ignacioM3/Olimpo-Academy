@@ -12,7 +12,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 
 
-const Header = () => {
+const NavBar = () => {
   const [navBar, setNavbar] = useState(false)
 
   const changeBackground = () => {
@@ -91,4 +91,4 @@ const Right = styled.div`
 
 `
 
-export default Header
+export default NavBar
