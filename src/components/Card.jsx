@@ -51,6 +51,10 @@ const Container = styled.div`
   margin: 25px auto 30px;
   border-radius: 10px;
   background-color: #e8d2d229;
+  transition: 1s all ease;
+  :hover{
+    transform: translateY(-15px)
+  }
 
 `
 const Wrapper = styled.div`

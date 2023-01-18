@@ -4,26 +4,31 @@ import Card from "./Card"
 const Main2 = () => {
   return (
     <Container>
-        <InfoContainer>
-          <Title>Potencia Tus Conocimientos En Olimpo Academy</Title>
-          <Description>
-                    En Olimpo Academy encontra los mejores cursos desde peluqueria, estética, auxiliar de enfermeria
-                    agente sanitario, mécanica de motos, etc...
-          </Description>
+      <InfoContainer>
+        <Title>Potencia Tus Conocimientos En Olimpo Academy</Title>
+        <Description>
+          En Olimpo Academy encontra los mejores cursos desde peluqueria, estética, auxiliar de enfermeria
+          agente sanitario, mécanica de motos, etc...
+        </Description>
 
-        </InfoContainer>
-        <ButtonContainer>
-          <Button>Todos los Cursos</Button>
-        </ButtonContainer>
+      </InfoContainer>
+      <ButtonContainer>
+        <Button>Todos los Cursos</Button>
+      </ButtonContainer>
 
-        <Line></Line>
+      <Line></Line>
 
-        <Cursos>
-            <Title2>CURSOS EN OFERTA</Title2>
+      <Cursos>
+        <Title2>CURSOS EN OFERTA</Title2>
+        <CardContainer>
+          <Row>
             <Card />
             <Card />
             <Card />
-        </Cursos>
+          </Row>
+        </CardContainer>
+
+      </Cursos>
     </Container>
   )
 }
@@ -56,7 +61,7 @@ const Title = styled.h1`
   }
 
 `
-const Description = styled.p  `
+const Description = styled.p`
 padding-top: 25px;
   font-size: 18px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -99,7 +104,7 @@ const Button = styled.button`
     font-size: 18px;
     border-radius: 8px;
   }
-` 
+`
 
 const Cursos = styled.div`
 
@@ -108,6 +113,21 @@ const Cursos = styled.div`
 const Title2 = styled.h3`
   text-align: center;
   margin: 30px 0 40px;
+`
+
+const CardContainer = styled.div`
+   width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+
+    @media only screen and (min-width: 1024px) {
+      max-width: 1200px;
+    }
+`
+const Row = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 `
 
 
