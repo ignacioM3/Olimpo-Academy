@@ -11,7 +11,7 @@ const Card = () => {
   return (
     <Container>
       <ImgContainer>
-        <Img src="src/assets/barberia.jpg" />
+        <Img src="/images/barberia.jpg" />
       </ImgContainer>
       <Wrapper>
         <InfoContainer>
