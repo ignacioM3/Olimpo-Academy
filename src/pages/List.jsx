@@ -14,17 +14,15 @@ const List = () => {
       </SearchContainer>
       <Title>Todos los cursos</Title>
       <CardContainer >
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-
+        <Row>
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </Row>
 
       </CardContainer>
     </Container>
@@ -43,7 +41,7 @@ const SearchContainer = styled.form`
   align-items: center;
   padding: 10px 15px;
   width: 100vw;
-  margin: 0 auto 15px;
+  margin: 0 auto 25px;
   
   input{
     width: 100%;
@@ -64,12 +62,32 @@ const ButtonSubmit = styled.div`
   }
 `
 const Title = styled.h2`
-
   text-align: center;
   color: white;
+  @media only screen and (min-width: 1024px) {
+     margin: 40px 0 25px;
+     font-size: 28px;
+    }
 `
 
 const CardContainer = styled.div`
-  color: white;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+
+    @media only screen and (min-width: 1024px) {
+      max-width: 1200px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      max-width: 1100px;
+    }
+`
+
+const Row = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 `
 export default List

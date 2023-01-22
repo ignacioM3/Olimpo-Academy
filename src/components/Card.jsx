@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components'
 
 
@@ -5,14 +6,30 @@ import styled from 'styled-components'
 //icons
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 
 
 const Card = () => {
+
+  const [fav, setFav] = useState();
+
+  const handleFavorite = () =>{
+    setFav(!fav)
+  }
   return (
     <Container>
       <ImgContainer>
         <Img src="/images/barberia.jpg" />
+        <FavoriteContainer onClick={handleFavorite}>
+          {
+            fav ? 
+            <FavoriteIcon className='rd'/> :
+            <FavoriteBorderOutlinedIcon className='red'/>
+          }
+        </FavoriteContainer>
       </ImgContainer>
+
       <Wrapper>
         <InfoContainer>
           <Title>Curso de Peluqueria</Title>
@@ -30,9 +47,9 @@ const Card = () => {
           </DetailContainer>
 
           <Description>
-            Curso de peluqueria aplicando distinto tipo de cortes y tipo de maquinas con varios tipo de 
+            Curso de peluqueria aplicando distinto tipo de cortes y tipo de maquinas con varios tipo de
             pelos con los mejores profesores de San José de Metan.
-            Curso de peluqueria aplicando distinto tipo de cortes y tipo de maquinas con varios tipo 
+            Curso de peluqueria aplicando distinto tipo de cortes y tipo de maquinas con varios tipo
           </Description>
         </InfoContainer>
         <ButtonContainer>
@@ -61,13 +78,26 @@ const Wrapper = styled.div`
  
 `
 const ImgContainer = styled.div`
-  
+  position: relative;
+
 `
 const Img = styled.img`
   width: 100%;
   height: 200px;
   border-radius: 10px;
 `
+const FavoriteContainer = styled.div`
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  svg{
+    font-size: 35px;
+  }
+
+`
+
 const InfoContainer = styled.div`
   padding: 10px 12px;
 
@@ -113,11 +143,12 @@ const Button = styled.button`
   border-radius: 0 0 10px 10px;
   width: 100%;
   cursor: pointer;
-  background-color: #f5f8ef;
+  background-color: #e8d2d229;
+  color: white;
   transition: 1s all ease;
   :hover{
-    background-color: #c5bfbc;
-    color: green;
+    background-color: #443f3d;
+    color: #a4c1a4;
   }
 `
 export default Card

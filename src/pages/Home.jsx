@@ -8,7 +8,7 @@ const Home = () => {
       <InfoContainer>
         <Title>Potencia Tus Conocimientos En Olimpo Academy</Title>
         <Description>
-          En Olimpo Academy encontra los mejores cursos desde peluqueria, estética, auxiliar de enfermeria
+          En Olimpo Academy encontra los mejores cursos desde peluqueria, estética, auxiliar de enfermeria,
           agente sanitario, mécanica de motos, etc...
         </Description>
 
@@ -33,6 +33,10 @@ const Home = () => {
         </CardContainer>
 
       </Cursos>
+
+      <EgresadosContainer>
+        <Title2>Egresados</Title2>
+      </EgresadosContainer>
     </Container>
   )
 }
@@ -120,7 +124,7 @@ const Title2 = styled.h3`
 `
 
 const CardContainer = styled.div`
-   width: 100%;
+    width: 100%;
     margin: 0 auto;
     max-width: 800px;
 
@@ -141,4 +145,5 @@ const Line = styled.div`
   border: 2px solid gray;
 `
 
+const EgresadosContainer = styled.div``
 export default Home

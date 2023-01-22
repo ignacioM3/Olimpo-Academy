@@ -6,7 +6,6 @@ import styled from "styled-components"
 
 //Icon
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { Link } from "react-router-dom";
 
@@ -32,6 +31,22 @@ const NavBar = () => {
       <Wrapper>
         <Left>
           <MenuIcon />
+
+          <ListContainer>
+            <Link to="/cursos">
+              <Title>Cursos</Title>
+            </Link>
+            <Link to="/egresado">
+              <Title>Egresados</Title>
+            </Link>
+            <Link to="/nosotros">
+              <Title>Nosotros</Title>
+            </Link>
+            <Link to="/preguntas">
+              <Title>Preguntas Frecuentes</Title>
+            </Link>
+
+          </ListContainer>
         </Left>
 
         <Center>
@@ -78,22 +93,56 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
 
+  @media only screen and (min-width: 1024px) {
+      order: 1;
+      svg{
+        display: none;
+        
+      }
+    }
+
+`
+
+const ListContainer = styled.div`
+  display: none;
+
+  @media only screen and (min-width: 1024px) {
+      display: flex;
+    }
+
+`
+
+const Title = styled.h2`
+  padding: 0 10px;
+  cursor: pointer;
 `
 const Center = styled.div`
-  
 
   img{
     width: 40px;
     height: 40px;
     border-radius: 30px;
   }
+
+  @media only screen and (min-width: 1024px) {
+      order: 0;
+      
+    }
 `
 
-const Image = styled.img`
-`
+
 
 const Right = styled.div`
-
+  display: flex;
+  transition: 0.5s ease-in-out all;
+  :hover{
+     color: red;
+  }
+  
+  @media only screen and (min-width: 1024px) {
+      order: 2;
+      
+    }
 `
 
 const Option = styled.div``
