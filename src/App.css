@@ -9,10 +9,12 @@
 a{
     text-decoration: none;
     outline:none;
-    color: black;
+    color: white;
 }
 
-
+.bg{
+    background-color: #1f2023;;
+}
 
 .header-opacity {
     opacity: 0.8;

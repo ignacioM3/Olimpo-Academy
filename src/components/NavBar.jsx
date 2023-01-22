@@ -8,6 +8,7 @@ import styled from "styled-components"
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { Link } from "react-router-dom";
 
 
 
@@ -34,14 +35,18 @@ const NavBar = () => {
         </Left>
 
         <Center>
-          <p>Olimpo</p>
+          <Link to="/">
+            <p>Olimpo</p>
+          </Link>
         </Center>
 
         <Right>
-          <SearchIcon className="mr-5" />
           <FavoriteBorderIcon />
         </Right>
       </Wrapper>
+      <Option>
+
+      </Option>
     </Container>
   )
 }
@@ -90,5 +95,7 @@ const Image = styled.img`
 const Right = styled.div`
 
 `
+
+const Option = styled.div``
 
 export default NavBar

@@ -1,17 +1,25 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import LayoutPublic from './layout/LayoutPublic'
 
 
 import './App.css'
-import Main2 from './components/Main2'
-import NavBar from './components/NavBar'
+import Home from './pages/Home'
+import List from './pages/List'
+
 
 function App() {
-  
+
 
   return (
-    <div> 
-      <NavBar />
-      <Main2 />
+    <div className='bg'>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<LayoutPublic />}>
+            <Route index element={<Home />} />
+            <Route path='cursos' element={<List />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
