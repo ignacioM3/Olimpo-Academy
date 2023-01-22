@@ -25,11 +25,11 @@ a{
 
 
 .red{
-    color: rgba(255, 0, 0, 0.598);
+    color: #fff200;
 }
 
 .rd{
-    color: rgb(255, 0, 0);
+    color: #fff200bf;
 }
 
 ::-webkit-scrollbar {

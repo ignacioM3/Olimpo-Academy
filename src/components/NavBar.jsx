@@ -2,12 +2,12 @@ import { useEffect, useState } from "react"
 
 
 import styled from "styled-components"
+import { Link } from "react-router-dom";
 
 
 //Icon
 import MenuIcon from '@mui/icons-material/Menu';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import { Link } from "react-router-dom";
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 
 
 
@@ -56,7 +56,7 @@ const NavBar = () => {
         </Center>
 
         <Right>
-          <FavoriteBorderIcon />
+          <StarBorderIcon />
         </Right>
       </Wrapper>
       <Option>
@@ -135,8 +135,13 @@ const Center = styled.div`
 const Right = styled.div`
   display: flex;
   transition: 0.5s ease-in-out all;
+  
   :hover{
-     color: red;
+      color: #fff200;
+  }
+
+  svg{
+    font-size: 36px;
   }
   
   @media only screen and (min-width: 1024px) {

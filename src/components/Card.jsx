@@ -6,8 +6,8 @@ import styled from 'styled-components'
 //icons
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
+import StarIcon from '@mui/icons-material/Star';
 
 
 const Card = () => {
@@ -24,8 +24,8 @@ const Card = () => {
         <FavoriteContainer onClick={handleFavorite}>
           {
             fav ? 
-            <FavoriteIcon className='rd'/> :
-            <FavoriteBorderOutlinedIcon className='red'/>
+            <StarIcon className='red'/> :
+            <StarBorderIcon className='rd'/> 
           }
         </FavoriteContainer>
       </ImgContainer>
@@ -93,7 +93,7 @@ const FavoriteContainer = styled.div`
   right: 15px;
 
   svg{
-    font-size: 35px;
+    font-size: 40px;
   }
 
 `
