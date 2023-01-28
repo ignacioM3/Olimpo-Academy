@@ -36,6 +36,9 @@ const Home = () => {
 
       <EgresadosContainer>
         <Title2>Egresados</Title2>
+        <Row>
+
+        </Row>
       </EgresadosContainer>
     </Container>
   )
@@ -121,6 +124,15 @@ const Cursos = styled.div`
 const Title2 = styled.h3`
   text-align: center;
   margin: 30px 0 40px;
+  font-size: 22px;
+  @media only screen and (min-width: 720px){
+    font-size: 25px;
+  }
+
+
+  @media only screen and (min-width: 1024px){
+    font-size: 35px;
+  }
 `
 
 const CardContainer = styled.div`

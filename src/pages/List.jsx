@@ -50,6 +50,17 @@ const SearchContainer = styled.form`
     border: none;
     font-size: 19px;
   }
+
+  @media only screen and (min-width: 1024px) {
+    width: 40vw;
+    margin: 30px auto;
+    border-radius: 30px;
+  }
+
+  @media only screen and (min-width: 1800px) {
+    width: 32vw;
+    margin: 38px auto;
+  }
 `
 
 const ButtonSubmit = styled.div`

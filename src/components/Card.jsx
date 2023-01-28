@@ -54,7 +54,7 @@ const Card = () => {
         </InfoContainer>
         <ButtonContainer>
           <Button>
-            Quiero este curso
+            <a href='https://wa.me/1136176964' >Quiero este curso</a>
           </Button>
         </ButtonContainer>
 
