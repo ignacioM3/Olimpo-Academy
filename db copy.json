@@ -1,6 +1,7 @@
 {
     "cursos" : [
-     
+        {
+            "belleza": [
                 {
                     "id": 1,
                     "name": "Peluquería Profesional Integral",
@@ -56,11 +57,15 @@
                     "duration": "2 meses",
                     "price": 500,
                     "dest": false 
-                },
+                }
                 
+            ]
+            
+        },
 
 
-
+        {
+            "salud":[
                 {
                     "id": 8,
                     "name": "Auxiliar de Farmacias",
@@ -108,9 +113,13 @@
                     "duration": "2 meses",
                     "price": 500,
                     "dest": false 
-                },
-  
-    
+                }
+        ]
+        },
+        
+        
+        {
+            "educación":[
                 {
                     "id": 14,
                     "name": "Auxiliar en Jardín Maternal y Nivel Inicial",
@@ -142,8 +151,13 @@
                     "duration": "2 meses",
                     "price": 500,
                     "dest": false 
-                },
+                }
+            ]
+        },
 
+
+        {
+            "administrativa":[
                 {
                     "id": 18,
                     "name": "Secretariado administrativo contable",
@@ -175,8 +189,13 @@
                     "duration": "2 meses",
                     "price": 500,
                     "dest": false 
-                },
+                }
+            ]
+        },
 
+
+        {
+            "varios": [
                 {
                     "id": 22,
                     "name": "Electricidad domiciliaria",
@@ -209,5 +228,7 @@
                     "price": 500,
                     "dest": false 
                 }
+            ]
+        }
     ]
 }

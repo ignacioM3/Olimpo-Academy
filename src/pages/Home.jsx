@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 import Card from "../components/Card"
+import useCursos from "../hooks/useCursos"
 
 const Home = () => {
+
   return (
     <Container>
       <InfoContainer>

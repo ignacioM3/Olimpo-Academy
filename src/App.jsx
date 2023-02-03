@@ -5,6 +5,7 @@ import LayoutPublic from './layout/LayoutPublic'
 import './App.css'
 import Home from './pages/Home'
 import List from './pages/List'
+import { CursosProvider } from './context/ProyectosProvider'
 
 
 function App() {
@@ -13,12 +14,14 @@ function App() {
   return (
     <div className='bg'>
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<LayoutPublic />}>
-            <Route index element={<Home />} />
-            <Route path='cursos' element={<List />} />
-          </Route>
-        </Routes>
+        <CursosProvider>
+          <Routes>
+            <Route path='/' element={<LayoutPublic />}>
+              <Route index element={<Home />} />
+              <Route path='cursos' element={<List />} />
+            </Route>
+          </Routes>
+        </CursosProvider>
       </BrowserRouter>
     </div>
   )

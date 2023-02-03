@@ -2,8 +2,10 @@ import Search from '@mui/icons-material/Search'
 import React from 'react'
 import styled from 'styled-components'
 import Card from '../components/Card'
+import useCursos from '../hooks/useCursos'
 
 const List = () => {
+  const {cursos} = useCursos()
   return (
     <Container>
       <SearchContainer>
@@ -15,12 +17,6 @@ const List = () => {
       <Title>Todos los cursos</Title>
       <CardContainer >
         <Row>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
           <Card />
         </Row>
 
