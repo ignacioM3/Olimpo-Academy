@@ -48,8 +48,8 @@ const Card = (props) => {
           </DetailContainer>
         </InfoContainer>
         <ButtonContainer>
-          <Button>
-            <a href='https://web.whatsapp.com/send/?phone=1136176964&text&type=phone_number&app_absent=0' >Quiero este curso</a>
+          <Button href={`https://web.whatsapp.com/send/?phone=+5493876520393&text=Hola!Estoy interesado en el curso ${name} &type=phone_number&app_absent=0`} target="_blank">
+            Quiero este curso
           </Button>
         </ButtonContainer>
 
@@ -129,18 +129,21 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
 `
-const Button = styled.button`
+const Button = styled.a`
   border: none;
   padding: 12px 10px;
   border-radius: 0 0 10px 10px;
   width: 100%;
+  height: 100%;
   cursor: pointer;
   background-color: #e8d2d229;
   color: white;
   transition: 1s all ease;
+  text-align: center;
   :hover{
     background-color: #443f3d;
     color: #a4c1a4;
   }
+
 `
 export default Card

@@ -9,6 +9,8 @@ const Home = () => {
 
 
   const {cursos} = useCursos()
+
+  
   return (
     <Container>
       <InfoContainer>
