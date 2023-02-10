@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 import Card from "../components/Card"
+import CardEgresado from "../components/CardEgresado"
+import VerMas from "../components/VerMas"
 import useCursos from "../hooks/useCursos"
 
 const Home = () => {
 
+
+  const {cursos} = useCursos()
   return (
     <Container>
       <InfoContainer>
@@ -36,12 +40,16 @@ const Home = () => {
 
       </Cursos>
 
-      <EgresadosContainer>
+      <CardContainer>
         <Title2>Egresados</Title2>
         <Row>
-
+          <CardEgresado />
+          <CardEgresado />
+          <CardEgresado />
+          <VerMas />
+          
         </Row>
-      </EgresadosContainer>
+      </CardContainer>
     </Container>
   )
 }

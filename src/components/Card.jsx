@@ -10,8 +10,9 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import StarIcon from '@mui/icons-material/Star';
 
 
-const Card = () => {
+const Card = (props) => {  
 
+  const {name, img, duration, price} = props
   const [fav, setFav] = useState();
 
   const handleFavorite = () =>{
@@ -20,7 +21,7 @@ const Card = () => {
   return (
     <Container>
       <ImgContainer>
-        <Img src="/images/barberia.jpg" />
+        <Img src={`/images/${img}`} />
         <FavoriteContainer onClick={handleFavorite}>
           {
             fav ? 
@@ -32,29 +33,23 @@ const Card = () => {
 
       <Wrapper>
         <InfoContainer>
-          <Title>Curso de Peluqueria</Title>
+          <Title>{name}</Title>
           <DetailContainer>
             <TimeContainer>
               <AccessTimeIcon />
-              <Time>5 meses</Time>
+              <Time>{duration}</Time>
             </TimeContainer>
 
 
             <PriceContainer>
               <AttachMoneyIcon />
-              <Time>50000</Time>
+              <Time>{price}</Time>
             </PriceContainer>
           </DetailContainer>
-
-          <Description>
-            Curso de peluqueria aplicando distinto tipo de cortes y tipo de maquinas con varios tipo de
-            pelos con los mejores profesores de San José de Metan.
-            Curso de peluqueria aplicando distinto tipo de cortes y tipo de maquinas con varios tipo
-          </Description>
         </InfoContainer>
         <ButtonContainer>
           <Button>
-            <a href='https://wa.me/1136176964' >Quiero este curso</a>
+            <a href='https://web.whatsapp.com/send/?phone=1136176964&text&type=phone_number&app_absent=0' >Quiero este curso</a>
           </Button>
         </ButtonContainer>
 
@@ -125,6 +120,7 @@ const PriceContainer = styled.div`
 `
 const Title = styled.h3`
   text-align: center;
+  padding: 10px 10px;
 `
 const Time = styled.p``
 const Description = styled.p`

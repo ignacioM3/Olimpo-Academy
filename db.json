@@ -5,57 +5,57 @@
                     "id": 1,
                     "name": "Peluquería Profesional Integral",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
-                    "price": 500,
-                    "dest": false 
+                    "price": 5500,
+                    "dest": false,
+                    "img": "barberia.jpg"
                 },
                 {
                     "id": 2,
                     "name": "Peluquería Masculina y Barbería",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
-                    "price": 500,
-                    "dest": false 
+                    "price": 3500,
+                    "dest": false,
+                    "img": "barberia2.jpg"
                 },
                 {
                     "id": 3,
                     "name": "Maquillaje Profesional",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
-                    "price": 500,
-                    "dest": false 
+                    "price": 4500,
+                    "dest": false,
+                    "img": "maquillaje-profesional.jpg"
                 },
                 {
                     "id": 4,
                     "name": "Depilación Integral",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "depilación-integral.jgp"
                 },
                 {
                     "id": 5,
                     "name": "NAILS art",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "nails-art.jpg"
                 },
                 {
                     "id": 6,
                     "name": "Belleza de ojos ",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "belleza-ojos.jpg"
                 },
                 {
                     "id": 7,
                     "name": "Auxiliar en cosmiatra",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "auxiliar-cosmiatra.jpg"
                 },
                 
 
@@ -65,49 +65,49 @@
                     "id": 8,
                     "name": "Auxiliar de Farmacias",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "auxiliar-farmacias.jpg"
                 },
                 {
                     "id": 9,
                     "name": "Auxiliar de Enfermería",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "auxiliar-enfermeria.jpg" 
                 },
                 {
                     "id": 10,
                     "name": "Acompañante Terapéutico",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "acompañante-terapeutico.jpg" 
                 },
                 {
                     "id": 11,
                     "name": "Masajista Profesional",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "masajista.jpg"
                 },
                 {
                     "id": 12,
                     "name": "Estimulación temprana",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "estimulacion.jpg"
                 },
                 {
                     "id": 13,
                     "name": "Agente sanitario",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "agente-sanitario.jpg"
                 },
   
     
@@ -115,99 +115,99 @@
                     "id": 14,
                     "name": "Auxiliar en Jardín Maternal y Nivel Inicial",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "jardin-maternal.jpg"
                 },
                 {
                     "id": 15,
                     "name": "Lengua de señas",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "senas.jpg" 
                 },
                 {
                     "id": 16,
                     "name": "Preceptoria",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "preceptor.jpg"
                 },
                 {
                     "id": 17,
                     "name": "Auxiliar en Educación Especial",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "educacion-especial.jpg"
                 },
 
                 {
                     "id": 18,
                     "name": "Secretariado administrativo contable",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "secretario.jpg"
                 },
                 {
                     "id": 19,
                     "name": "Secretariado ejecutivo informatizado",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "secretario-ejecutivo.jpg"
                 },
                 {
                     "id": 20,
                     "name": "Secretariado judicial",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "secretario-judicial.jpg"
                 },
                 {
                     "id": 21,
                     "name": "Asistente en recursos humanos",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": ""
                 },
 
                 {
                     "id": 22,
                     "name": "Electricidad domiciliaria",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "electricista.jpg"
                 },
                 {
                     "id": 23,
                     "name": "Mecánica de motos",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "motos.jpg"
                 },
                 {
                     "id": 24,
                     "name": "Peluquería canina",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "peluqueria-canina.jpg"
                 },
                 {
                     "id": 25,
                     "name": "Reparación de celulares",
                     "description": "asdkasmldkamsld",
-                    "duration": "2 meses",
                     "price": 500,
-                    "dest": false 
+                    "dest": false,
+                    "img": "celus.jpg"
                 }
     ]
 }

@@ -17,7 +17,11 @@ const List = () => {
       <Title>Todos los cursos</Title>
       <CardContainer >
         <Row>
-          <Card />
+          {
+            cursos.map((cur) =>(
+              <Card key={cur.id}{...cur}/>
+            ))
+          }
         </Row>
 
       </CardContainer>
