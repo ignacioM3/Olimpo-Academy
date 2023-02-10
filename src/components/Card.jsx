@@ -121,14 +121,10 @@ const PriceContainer = styled.div`
 const Title = styled.h3`
   text-align: center;
   padding: 10px 10px;
+  height: 50px;
 `
 const Time = styled.p``
-const Description = styled.p`
-  padding: 10px 12px;
-  text-align: center;
-  font-size: 15px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-`
+
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
