@@ -34,9 +34,12 @@ const Home = () => {
         <Title2>CURSOS EN OFERTA</Title2>
         <CardContainer>
           <Row>
-            <Card />
-            <Card />
-            <Card />
+            {
+              cursos.map((cur) =>(
+                cur.id < 4 &&
+                <Card key={cur.id} {...cur}/> 
+              ))
+            }
           </Row>
         </CardContainer>
 
@@ -48,7 +51,12 @@ const Home = () => {
           <CardEgresado />
           <CardEgresado />
           <CardEgresado />
-          <VerMas />
+          <ContainerTodos>
+            <Link to="/egresados">
+              <VerMas />
+            </Link>
+          </ContainerTodos>
+          
           
         </Row>
       </CardContainer>
@@ -161,8 +169,10 @@ const Row = styled.div`
     flex-wrap: wrap;
     justify-content: center;
 `
-
-
+const ContainerTodos = styled.div`
+  display: flex;
+  align-items: center;
+`
 const Line = styled.div`
   width: 200px;
   margin: 20px auto;
