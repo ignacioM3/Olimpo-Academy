@@ -36,7 +36,7 @@ const NavBar = () => {
             <Link to="/cursos">
               <Title>Cursos</Title>
             </Link>
-            <Link to="/egresado">
+            <Link to="/egresados">
               <Title>Egresados</Title>
             </Link>
             <Link to="/nosotros">
@@ -56,7 +56,9 @@ const NavBar = () => {
         </Center>
 
         <Right>
-          <StarBorderIcon />
+          <Link to="/favorite">
+            <StarBorderIcon />
+          </Link>
         </Right>
       </Wrapper>
       <Option>

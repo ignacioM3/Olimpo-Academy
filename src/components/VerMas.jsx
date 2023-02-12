@@ -21,10 +21,13 @@ const Container = styled.div`
   cursor: pointer;
   padding: 10px;
   border-radius: 10px;
-  margin: 0 10px;
+  margin: 0 20px;
   transition: 1s all ease;
   :hover{
     transform: translateY(-15px)
+  }
+  @media only screen and (min-width: 720px){
+    margin: 0 10px;
   }
 `
 

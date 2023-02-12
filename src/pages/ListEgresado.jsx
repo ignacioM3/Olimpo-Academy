@@ -1,54 +1,47 @@
-import Search from '@mui/icons-material/Search'
-import React from 'react'
 import styled from 'styled-components'
-import Card from '../components/Card'
-import useCursos from '../hooks/useCursos'
 
-const List = () => {
-  const {cursos, favorites} = useCursos()
+import Search from '@mui/icons-material/Search'
+import CardEgresado from '../components/CardEgresado'
+
+const ListEgresado = () => {
   return (
     <Container>
       <SearchContainer>
         <ButtonSubmit type="submit">
           <Search />
         </ButtonSubmit>
-        <input type="text" placeholder='Encuentra tu curso'/>
+        <input type="text" placeholder='Egresados'/>
       </SearchContainer>
-      <Title>Todos los cursos</Title>
-      <CardContainer >
+      <Title>Egresados</Title>
+
+      <CardContainer>
         <Row>
-          {
-            cursos.map((cur) =>{
-              for(let i = 0; i < favorites.length ; i++){
-                if(favorites[i].name === cur.name){
-                  cur.favorite = true
-                }
-              }
-
-              return <Card key={cur.id}{...cur}/>
-            })
-          }
+          <CardEgresado />
+          <CardEgresado />
+          <CardEgresado />
+          <CardEgresado />
+          <CardEgresado />
+          <CardEgresado />
         </Row>
-
       </CardContainer>
+
     </Container>
   )
 }
 
-
 const Container = styled.div`
-  background-color: #1f2023;
-  padding-bottom: 10px;
+   background-color: #1f2023;
+   padding-bottom: 10px;
+   min-height: 100vh;
 `
-
-const SearchContainer = styled.form`
+const SearchContainer = styled.div`
   background-color: white;
   display: flex;
   align-items: center;
   padding: 10px 15px;
   width: 100vw;
   margin: 0 auto 25px;
-  
+
   input{
     width: 100%;
     height: 40px;
@@ -57,18 +50,17 @@ const SearchContainer = styled.form`
     font-size: 19px;
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px){
     width: 40vw;
     margin: 30px auto;
     border-radius: 30px;
   }
 
-  @media only screen and (min-width: 1800px) {
+  @media only screen and (min-width: 1800px){
     width: 32vw;
     margin: 38px auto;
   }
 `
-
 const ButtonSubmit = styled.div`
   cursor: pointer;
   margin-right: 12px;
@@ -98,13 +90,14 @@ const CardContainer = styled.div`
     }
 
     @media only screen and (min-width: 1200px) {
-      max-width: 1100px;
+      max-width: 900px;
     }
 `
-
 const Row = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 `
-export default List
+
+
+export default ListEgresado

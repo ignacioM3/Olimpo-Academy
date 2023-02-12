@@ -8,15 +8,24 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import StarIcon from '@mui/icons-material/Star';
+import useCursos from '../hooks/useCursos';
 
 
 const Card = (props) => {  
 
-  const {name, img, duration, price} = props
-  const [fav, setFav] = useState();
+  const {name, img, duration, price, favorite = false} = props
+  const [fav, setFav] = useState(favorite);
+
+  const {addFavorite, deleteFavorite} = useCursos()
 
   const handleFavorite = () =>{
     setFav(!fav)
+    if(favorite){
+      deleteFavorite(props)
+    }else{
+      addFavorite(props)
+    }
+   
   }
   return (
     <Container>

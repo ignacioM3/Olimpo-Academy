@@ -4,8 +4,14 @@ import { useState, useEffect, createContext}  from "react";
 const CursosContext = createContext();
 
 const CursosProvider = ({children}) =>{
+    const initialStateFavorite = JSON.parse(localStorage.getItem("favorites")) ? JSON.parse(localStorage.getItem("favorites")) : []
+
     const [cursos, setCursos] = useState([])
     const [load, setLoad] = useState(false)
+    const [favorites, setFavorites] = useState(initialStateFavorite)
+    
+
+
 
     const obtenerCursos = async () =>{
         setLoad(true)
@@ -24,11 +30,32 @@ const CursosProvider = ({children}) =>{
     useEffect(()=>{
         obtenerCursos()
     }, [])
+
+    useEffect(() =>{
+        localStorage.setItem('favorites', JSON.stringify(favorites))
+    }, [favorites])
+
+   const addFavorite = (state) =>{
+        setFavorites([...favorites, state])
+   }
+
+
+   const deleteFavorite = (state) =>{
+        setFavorites(favorites.filter(cur => cur.name !== state.name))
+   }
+
+   useEffect(() => {
+    console.log(favorites)
+   }, [favorites]);
+
     return (
     <CursosContext.Provider
         value={{
             cursos,
-            load
+            favorites,
+            load,
+            addFavorite,
+            deleteFavorite
         }}
     >
         {children}

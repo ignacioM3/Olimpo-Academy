@@ -36,7 +36,8 @@ const Container = styled.div`
   }
 `
 
-const Name = styled.h1`
+const Name = styled.h2`
+  text-align: center;
 `
 
 const Item = styled.div`

@@ -172,6 +172,7 @@ const Row = styled.div`
 const ContainerTodos = styled.div`
   display: flex;
   align-items: center;
+  
 `
 const Line = styled.div`
   width: 200px;

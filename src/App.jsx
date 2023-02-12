@@ -6,6 +6,8 @@ import './App.css'
 import Home from './pages/Home'
 import List from './pages/List'
 import { CursosProvider } from './context/ProyectosProvider'
+import ListEgresado from './pages/ListEgresado'
+import Favorite from './pages/Favorite'
 
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
             <Route path='/' element={<LayoutPublic />}>
               <Route index element={<Home />} />
               <Route path='cursos' element={<List />} />
+              <Route path='egresados' element={<ListEgresado />} />
+              <Route path='nosotros' />
+              <Route path='favorite' element={<Favorite />}/>
             </Route>
           </Routes>
         </CursosProvider>
