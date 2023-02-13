@@ -8,7 +8,7 @@ import useCursos from "../hooks/useCursos"
 const Home = () => {
 
 
-  const {cursos} = useCursos()
+  const {cursos, favorites} = useCursos()
 
   
   return (
@@ -35,10 +35,16 @@ const Home = () => {
         <CardContainer>
           <Row>
             {
-              cursos.map((cur) =>(
-                cur.id < 4 &&
-                <Card key={cur.id} {...cur}/> 
-              ))
+              cursos.map((cur) =>{
+                if(cur.id < 4){
+                  for(let i = 0; i < favorites.length; i++){
+                    if(favorites[i].name === cur.name){
+                      cur.favorite = true
+                    }
+                  }
+                  return <Card key={cur.id}{...cur}/>
+                }
+              })
             }
           </Row>
         </CardContainer>

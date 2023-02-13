@@ -14,6 +14,7 @@ const Favorite = () => {
       <CardContainer >
         <Row>
           {
+           favorites.length ? (
             favorites.map((cur) =>{
               for(let i = 0; i < favorites.length; i++){
                 if(favorites[i].name === cur.name){
@@ -22,6 +23,7 @@ const Favorite = () => {
               }
               return <Card key={cur.id}{...cur}/>
             })
+           ) : <Error>No hay cursos agregados a favoritos</Error>
           }
         </Row>
 
@@ -62,5 +64,10 @@ const Row = styled.div`
     flex-wrap: wrap;
     justify-content: center;
 ` 
+
+const Error = styled.h2`
+  color: #4ce351;
+  text-align: center;
+`
 
 export default Favorite
