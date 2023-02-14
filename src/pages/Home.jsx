@@ -8,7 +8,7 @@ import useCursos from "../hooks/useCursos"
 const Home = () => {
 
 
-  const {cursos, favorites} = useCursos()
+  const {cursos, favorites, egresados} = useCursos()
 
   
   return (
@@ -54,9 +54,13 @@ const Home = () => {
       <CardContainer>
         <Title2>Egresados</Title2>
         <Row>
-          <CardEgresado />
-          <CardEgresado />
-          <CardEgresado />
+          {
+             egresados.map((egr) =>{
+              if(egr.id < 4){
+                return <CardEgresado key={egr.id}{...egr}/>
+                }
+            })
+          }
           <ContainerTodos>
             <Link to="/egresados">
               <VerMas />

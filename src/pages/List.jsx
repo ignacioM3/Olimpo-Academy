@@ -6,18 +6,13 @@ import useCursos from '../hooks/useCursos'
 
 const List = () => {
   const [busqueda, setBusqueda] = useState('')
-
   const {cursos, favorites} = useCursos()
 
   const cursoFiltrado = busqueda === '' ? cursos : cursos.filter(cur => 
       cur.name.toLowerCase().includes(busqueda.toLocaleLowerCase())
     )
 
-    
-
-useEffect(() => {
-  console.log(cursoFiltrado)
-}, [busqueda]);
+  
   return (
     <Container>
       

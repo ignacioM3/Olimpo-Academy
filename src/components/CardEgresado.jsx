@@ -4,6 +4,7 @@ import styled from "styled-components"
 const CardEgresado = (props) => {
 
   const {name, fecha, matricula, cursoName} = props;
+
   return (
     <Container>
         <Name>{name}</Name>
@@ -26,6 +27,7 @@ const Container = styled.div`
   background-color: #e8d2d229;
   margin: 25px auto 30px;
   border-radius: 10px;
+  width: 250px;
   padding: 20px;
   transition: 1s all ease;
   cursor: pointer;
@@ -38,7 +40,7 @@ const Container = styled.div`
   }
 `
 
-const Name = styled.h2`
+const Name = styled.h3`
   text-align: center;
 `
 
@@ -50,6 +52,7 @@ const Item = styled.div`
 
 const Text = styled.p`
   color: #f8f3f3;
+  text-align: center;
 `
 
 

@@ -3,9 +3,16 @@ import styled from 'styled-components'
 import Search from '@mui/icons-material/Search'
 import CardEgresado from '../components/CardEgresado'
 import useCursos from '../hooks/useCursos'
+import { useState } from 'react'
 
 const ListEgresado = () => {
   const {egresados} = useCursos()
+
+  const [busqueda, setBusqueda] = useState('')
+
+  const egresadosFiltrados = busqueda === '' ? egresados : egresados.filter(egr => 
+      egr.name.toLowerCase().includes(busqueda.toLocaleLowerCase())
+    )
 
 
   return (
@@ -14,14 +21,14 @@ const ListEgresado = () => {
         <ButtonSubmit type="submit">
           <Search />
         </ButtonSubmit>
-        <input type="text" placeholder='Egresados'/>
+        <input type="text" placeholder='Egresados' onChange={e => setBusqueda(e.target.value)}/>
       </SearchContainer>
       <Title>Egresados</Title>
 
       <CardContainer>
         <Row>
           {
-            egresados.map((egr) => (
+            egresadosFiltrados.map((egr) => (
                <CardEgresado key={egr.id}{...egr}/>
             ))
           }
