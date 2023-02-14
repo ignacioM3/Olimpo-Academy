@@ -216,37 +216,43 @@
             "id" : 1,
             "name": "Hernesto Sosa",
             "fecha": "22/10/2020",
-            "Matricula": "1231231"
+            "cursoName": "peluqueria Profesional Ingregal",
+            "matricula": "1231231"
         },
         {
             "id" : 2,
             "name": "Ignacio Marquez",
             "fecha": "12/08/2020",
-            "Matricula": "411982"
+            "cursoName": "Belleza de ojos",
+            "matricula": "411982"
         },
         {
             "id" : 3,
             "name": "Maria Ester Davalos",
             "fecha": "22/10/2020",
-            "Matricula": "1231231"
+            "cursoName": "Auxiliar de enfermeria",
+            "matricula": "1231231"
         },
         {
             "id" : 4,
             "name": "Juan Carlos Gomez",
             "fecha": "22/10/2020",
-            "Matricula": "1231231"
+            "cursoName": "Auxiliar en Jardin Maternal y Nivel inicial",
+            "matricula": "1231231"
         },
         {
             "id" : 5,
             "name": "Ian Valdez",
             "fecha": "22/10/2020",
-            "Matricula": "1231231"
+            "cursoName": "peluqueria Profesional Ingregal",
+            "matricula": "1231231"
         },
         {
             "id" : 6,
             "name": "Matias Jaime",
             "fecha": "22/10/2020",
-            "Matricula": "1231231"
+            "cursoName": "peluqueria Profesional Ingregal",
+            "matricula": "1231231"
         }
     ]
 }

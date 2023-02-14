@@ -7,6 +7,7 @@ const CursosProvider = ({children}) =>{
     const initialStateFavorite = JSON.parse(localStorage.getItem("favorites")) ? JSON.parse(localStorage.getItem("favorites")) : []
 
     const [cursos, setCursos] = useState([])
+    const [egresados, setEgresados] = useState([])
     const [load, setLoad] = useState(false)
     const [favorites, setFavorites] = useState(initialStateFavorite)
     
@@ -26,9 +27,26 @@ const CursosProvider = ({children}) =>{
             setLoad(false)
         }
     }
+    const ObtenerEgresados = async () =>{
+        setLoad(true)
+        const url = 'https://my-json-server.typicode.com/ignacioM3/Olimpo-Academy/egresados'
+
+        try {
+            const respuesta = await fetch(url);
+            const resultado = await respuesta.json();
+            setEgresados(resultado)
+            console.log(egresados)
+        } catch (error) {
+            console.log(error)
+        }finally{
+            setLoad(false)
+        }
+    }
+
 
     useEffect(()=>{
         obtenerCursos()
+        ObtenerEgresados()
     }, [])
 
     useEffect(() =>{
@@ -55,7 +73,8 @@ const CursosProvider = ({children}) =>{
             favorites,
             load,
             addFavorite,
-            deleteFavorite
+            deleteFavorite,
+            egresados
         }}
     >
         {children}

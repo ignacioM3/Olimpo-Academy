@@ -1,20 +1,22 @@
 import styled from "styled-components"
 
 
-const CardEgresado = () => {
+const CardEgresado = (props) => {
+
+  const {name, fecha, matricula, cursoName} = props;
   return (
     <Container>
-        <Name>Hernesto Sosa</Name>
+        <Name>{name}</Name>
         <Item>
-            <Text>Peluquería Profesional Integral</Text>
+            <Text>{cursoName}</Text>
         </Item>
         <Item>
             <span>Fecha: </span>
-            <Text>22/10/2023</Text>
+            <Text>{fecha}</Text>
         </Item>
         <Item>
             <span>Matricula: </span>
-            <Text>124124132</Text>
+            <Text>{matricula}</Text>
         </Item>
     </Container>
   )

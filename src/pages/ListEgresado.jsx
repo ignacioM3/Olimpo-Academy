@@ -2,8 +2,12 @@ import styled from 'styled-components'
 
 import Search from '@mui/icons-material/Search'
 import CardEgresado from '../components/CardEgresado'
+import useCursos from '../hooks/useCursos'
 
 const ListEgresado = () => {
+  const {egresados} = useCursos()
+
+
   return (
     <Container>
       <SearchContainer>
@@ -16,12 +20,11 @@ const ListEgresado = () => {
 
       <CardContainer>
         <Row>
-          <CardEgresado />
-          <CardEgresado />
-          <CardEgresado />
-          <CardEgresado />
-          <CardEgresado />
-          <CardEgresado />
+          {
+            egresados.map((egr) => (
+               <CardEgresado key={egr.id}{...egr}/>
+            ))
+          }
         </Row>
       </CardContainer>
 
