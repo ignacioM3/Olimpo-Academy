@@ -1,24 +1,41 @@
 import Search from '@mui/icons-material/Search'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Card from '../components/Card'
 import useCursos from '../hooks/useCursos'
 
 const List = () => {
+  const [busqueda, setBusqueda] = useState('')
+
   const {cursos, favorites} = useCursos()
+
+  const cursoFiltrado = busqueda === '' ? cursos : cursos.filter(cur => 
+      cur.name.toLowerCase().includes(busqueda.toLocaleLowerCase())
+    )
+
+    
+
+useEffect(() => {
+  console.log(cursoFiltrado)
+}, [busqueda]);
   return (
     <Container>
+      
       <SearchContainer>
-        <ButtonSubmit type="submit">
+        <ButtonSubmit type="submit" >
           <Search />
         </ButtonSubmit>
-        <input type="text" placeholder='Encuentra tu curso'/>
+        <input type="text" placeholder='Encuentra tu curso' onChange={e => setBusqueda(e.target.value)}/>
       </SearchContainer>
-      <Title>Todos los cursos</Title>
+      <Title>
+        {
+          busqueda ? `Resultado de la busqueda: ${busqueda}` : 'Todos los cursos'
+        }
+      </Title>
       <CardContainer >
         <Row>
           {
-            cursos.map((cur) =>{
+            cursoFiltrado.map((cur) =>{
               for(let i = 0; i < favorites.length ; i++){
                 if(favorites[i].name === cur.name){
                   cur.favorite = true
@@ -85,6 +102,8 @@ const Title = styled.h2`
      margin: 40px 0 25px;
      font-size: 28px;
     }
+
+
 `
 
 const CardContainer = styled.div`
