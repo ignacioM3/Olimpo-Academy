@@ -4,56 +4,63 @@
                 {
                     "id": 1,
                     "name": "Peluquería Profesional Integral",
+                    "category": "belleza",
                     "duration": "2 meses",
-                    "price": 5500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "barberia.jpg"
                 },
                 {
                     "id": 2,
                     "name": "Peluquería Masculina y Barbería",
+                    "category": "belleza",
                     "duration": "2 meses",
-                    "price": 3500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "barberia2.jpg"
                 },
                 {
                     "id": 3,
                     "name": "Maquillaje Profesional",
+                    "category": "belleza",
                     "duration": "2 meses",
-                    "price": 4500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "maquillaje-profesional.jpg"
                 },
                 {
                     "id": 4,
                     "name": "Depilación Integral",
+                    "category": "belleza",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "depilación-integral.jpg"
                 },
                 {
                     "id": 5,
                     "name": "NAILS art",
+                    "category": "belleza",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "nails-art.jpg"
                 },
                 {
                     "id": 6,
                     "name": "Belleza de ojos ",
+                    "category": "belleza",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "belleza-ojos.jpg"
                 },
                 {
                     "id": 7,
                     "name": "Auxiliar en cosmiatra",
+                    "category": "belleza",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "auxiliar-cosmiatra.jpg"
                 },
@@ -64,48 +71,54 @@
                 {
                     "id": 8,
                     "name": "Auxiliar de Farmacias",
+                    "category": "salud",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "auxiliar-farmacias.jpg"
                 },
                 {
                     "id": 9,
                     "name": "Auxiliar de Enfermería",
+                    "category": "salud",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "auxiliar-enfermeria.jpg" 
                 },
                 {
                     "id": 10,
                     "name": "Acompañante Terapéutico",
+                    "category": "salud",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "acompañante-terapeutico.jpg" 
                 },
                 {
                     "id": 11,
                     "name": "Masajista Profesional",
+                    "category": "salud",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "masajista.jpg"
                 },
                 {
                     "id": 12,
                     "name": "Estimulación temprana",
+                    "category": "salud",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "estimulacion.jpg"
                 },
                 {
                     "id": 13,
                     "name": "Agente sanitario",
+                    "category": "salud",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "agente-sanitario.jpg"
                 },
@@ -114,32 +127,36 @@
                 {
                     "id": 14,
                     "name": "Auxiliar en Jardín Maternal y Nivel Inicial",
+                    "category": "educación",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "jardin-maternal.jpg"
                 },
                 {
                     "id": 15,
                     "name": "Lengua de señas",
+                    "category": "educación",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "senas.jpg" 
                 },
                 {
                     "id": 16,
                     "name": "Preceptoria",
+                    "category": "educación",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "preceptor.jpg"
                 },
                 {
                     "id": 17,
                     "name": "Auxiliar en Educación Especial",
+                    "category": "educación",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "educacion-especial.jpg"
                 },
@@ -147,32 +164,36 @@
                 {
                     "id": 18,
                     "name": "Secretariado administrativo contable",
+                    "category": "administrativa",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "secretario.jpg"
                 },
                 {
                     "id": 19,
                     "name": "Secretariado ejecutivo informatizado",
+                    "category": "administrativa",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "secretario-ejecutivo.jpg"
                 },
                 {
                     "id": 20,
                     "name": "Secretariado judicial",
+                    "category": "administrativa",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "secretario-judicial.jpg"
                 },
                 {
                     "id": 21,
                     "name": "Asistente en recursos humanos",
+                    "category": "administrativa",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "asistente-rh.jpg"
                 },
@@ -180,32 +201,36 @@
                 {
                     "id": 22,
                     "name": "Electricidad domiciliaria",
+                    "category": "varios",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "electricista.jpg"
                 },
                 {
                     "id": 23,
                     "name": "Mecánica de motos",
+                    "category": "varios",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "motos.jpg"
                 },
                 {
                     "id": 24,
                     "name": "Peluquería canina",
+                    "category": "varios",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "peluqueria-canina.jpg"
                 },
                 {
                     "id": 25,
                     "name": "Reparación de celulares",
+                    "category": "varios",
                     "duration": "2 meses",
-                    "price": 500,
+                    "cupos": 10,
                     "dest": false,
                     "img": "celus.jpg"
                 }

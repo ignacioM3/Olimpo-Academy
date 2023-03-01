@@ -1,43 +1,38 @@
-import Search from '@mui/icons-material/Search'
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Card from '../components/Card'
 import useCursos from '../hooks/useCursos'
 
 const List = () => {
-  const [busqueda, setBusqueda] = useState('')
-  const {cursos, favorites} = useCursos()
-
-  const cursoFiltrado = busqueda === '' ? cursos : cursos.filter(cur => 
-      cur.name.toLowerCase().includes(busqueda.toLocaleLowerCase())
-    )
+  const { cursos, favorites } = useCursos()
+  const [filter, setFilter] = useState('salud')
+  const category = ['belleza', 'salud', 'educación', "administrativa", "varios"]
 
   
   return (
     <Container>
-      
-      <SearchContainer>
-        <ButtonSubmit type="submit" >
-          <Search />
-        </ButtonSubmit>
-        <input type="text" placeholder='Encuentra tu curso' onChange={e => setBusqueda(e.target.value)}/>
-      </SearchContainer>
-      <Title>
-        {
-          busqueda ? `Resultado de la busqueda: ${busqueda}` : 'Todos los cursos'
-        }
-      </Title>
+      <Title>Todos los cursos</Title>
+      <ContainerCheckbox>
+        <Ul>
+          {category.map((cat, index) => (
+            <Lista key={index}>
+              <Input type="checkbox" id={`check-${index}`} value={cat} onInputCapture={e=> setFilter(e.target.value)} />
+              <Label htmlFor={`check-${index}`}>{cat}</Label>
+            </Lista>
+          ))}
+        </Ul>
+      </ContainerCheckbox>
       <CardContainer >
         <Row>
           {
-            cursoFiltrado.map((cur) =>{
-              for(let i = 0; i < favorites.length ; i++){
-                if(favorites[i].name === cur.name){
+            cursos.map((cur) => {
+              for (let i = 0; i < favorites.length; i++) {
+                if (favorites[i].name === cur.name) {
                   cur.favorite = true
                 }
               }
 
-              return <Card key={cur.id}{...cur}/>
+              return <Card key={cur.id}{...cur} />
             })
           }
         </Row>
@@ -53,43 +48,6 @@ const Container = styled.div`
   padding-bottom: 10px;
 `
 
-const SearchContainer = styled.form`
-  background-color: white;
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  width: 100vw;
-  margin: 0 auto 25px;
-  
-  input{
-    width: 100%;
-    height: 40px;
-    outline: none;
-    border: none;
-    font-size: 19px;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    width: 40vw;
-    margin: 30px auto;
-    border-radius: 30px;
-  }
-
-  @media only screen and (min-width: 1800px) {
-    width: 32vw;
-    margin: 38px auto;
-  }
-`
-
-const ButtonSubmit = styled.div`
-  cursor: pointer;
-  margin-right: 12px;
-
-  svg{
-    font-size: 25px;
-    color: #6d6868;
-  }
-`
 const Title = styled.h2`
   text-align: center;
   color: white;
@@ -97,8 +55,52 @@ const Title = styled.h2`
      margin: 40px 0 25px;
      font-size: 28px;
     }
+`
 
+const ContainerCheckbox = styled.div`
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;    
+`
 
+const Ul = styled.ul`
+    list-style: none;
+    padding: 20px;
+`
+const Lista = styled.li`
+    display: inline;
+    margin: 0 10px;
+    input[type="checkbox"]:checked+label{
+        border: 1px solid #505172;
+        background-color: #505272;
+        color: white;
+        transition: all .2s;
+    }
+`
+const Label = styled.label`
+    display: inline-block;
+    background-color: #2B3241;
+    border: 1px solid #B1B2CF;
+    color: #c2c3e7;
+    border-radius: 25px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+    padding: 8px 12px;
+    cursor: pointer;
+
+    &:hover{
+        border: 1px solid #c0c2eb;
+    }
+`
+const Input = styled.input`
+    display: none;
 `
 
 const CardContainer = styled.div`

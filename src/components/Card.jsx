@@ -52,7 +52,7 @@ const Card = (props) => {
 
             <PriceContainer>
               <AttachMoneyIcon />
-              <Time>{price}</Time>
+              <Time>{cupos}</Time>
             </PriceContainer>
           </DetailContainer>
         </InfoContainer>
