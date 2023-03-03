@@ -180,6 +180,7 @@ const BgDiv = styled.div`
   z-index: -1;
   transition: all .6s ease;
   top: -1000px;
+  border-bottom: 1px solid #d3cfcf85;
   left: -1000px;
   &.active{
     top: 0;

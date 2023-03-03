@@ -5,8 +5,18 @@ import useCursos from '../hooks/useCursos'
 
 const List = () => {
   const { cursos, favorites } = useCursos()
-  const [filter, setFilter] = useState('salud')
+  const [categorias, setCategorias] = useState([])
   const category = ['belleza', 'salud', 'educación', "administrativa", "varios"]
+
+
+  const handleCheckBox = (state) =>{
+    const test = categorias.find(cur => cur === state)
+    if(test){
+      setCategorias(categorias.filter(cur => cur !== test))
+    }else{
+      setCategorias([...categorias, state])
+    }
+  }
 
   
   return (
@@ -16,7 +26,7 @@ const List = () => {
         <Ul>
           {category.map((cat, index) => (
             <Lista key={index}>
-              <Input type="checkbox" id={`check-${index}`} value={cat} onInputCapture={e=> setFilter(e.target.value)} />
+              <Input type="checkbox" id={`check-${index}`} value={cat} onInputCapture={e=> handleCheckBox(e.target.value)} />
               <Label htmlFor={`check-${index}`}>{cat}</Label>
             </Lista>
           ))}
@@ -24,17 +34,26 @@ const List = () => {
       </ContainerCheckbox>
       <CardContainer >
         <Row>
-          {
-            cursos.map((cur) => {
-              for (let i = 0; i < favorites.length; i++) {
-                if (favorites[i].name === cur.name) {
-                  cur.favorite = true
+        {
+              cursos.map((cur) => {
+                for (let i = 0; i < favorites.length; i++) {
+                  if (favorites[i].name === cur.name) {
+                    cur.favorite = true
+                  }
                 }
-              }
+                if(categorias.length > 0){
+                  for (let i = 0; i < categorias.length; i++) {
+                    if (categorias[i] === cur.category) {
+                      return <Card key={cur.id}{...cur} />
+                    }
+                  }
+                }else{
+                  return <Card key={cur.id}{...cur} />
+                }
 
-              return <Card key={cur.id}{...cur} />
-            })
-          }
+                
+              })
+        }
         </Row>
 
       </CardContainer>
