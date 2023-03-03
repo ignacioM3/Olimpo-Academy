@@ -61,7 +61,7 @@
                     "category": "belleza",
                     "duration": "2 meses",
                     "cupos": 10,
-                    "dest": false,
+                    "dest": true,
                     "img": "auxiliar-cosmiatra.jpg"
                 },
                 
@@ -74,7 +74,7 @@
                     "category": "salud",
                     "duration": "2 meses",
                     "cupos": 10,
-                    "dest": false,
+                    "dest": true,
                     "img": "auxiliar-farmacias.jpg"
                 },
                 {
@@ -157,7 +157,7 @@
                     "category": "educación",
                     "duration": "2 meses",
                     "cupos": 10,
-                    "dest": false,
+                    "dest": true,
                     "img": "educacion-especial.jpg"
                 },
 

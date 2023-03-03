@@ -36,7 +36,7 @@ const Home = () => {
           <Row>
             {
               cursos.map((cur) =>{
-                if(cur.id < 4){
+                if(cur.dest === true){
                   for(let i = 0; i < favorites.length; i++){
                     if(favorites[i].name === cur.name){
                       cur.favorite = true
