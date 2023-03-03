@@ -46,11 +46,13 @@ const List = () => {
 const Container = styled.div`
   background-color: #1f2023;
   padding-bottom: 10px;
+  min-height: 100vh;
 `
 
 const Title = styled.h2`
   text-align: center;
   color: white;
+  margin: 30px 0 0;
   @media only screen and (min-width: 1024px) {
      margin: 40px 0 25px;
      font-size: 28px;

@@ -54,7 +54,7 @@ const Card = (props) => {
           </DetailContainer>
         </InfoContainer>
         <ButtonContainer>
-          <Button href={`https://web.whatsapp.com/send/?phone=+5493876520393&text=Hola!Estoy interesado en el curso ${name} &type=phone_number&app_absent=0`} target="_blank">
+          <Button href={`https://web.whatsapp.com/send/?phone=+5493876520393&text=Hola! Estoy interesado en el curso ${name} &type=phone_number&app_absent=0`} target="_blank">
             Quiero este curso
           </Button>
         </ButtonContainer>

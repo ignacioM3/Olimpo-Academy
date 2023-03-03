@@ -37,20 +37,23 @@ const NavBar = () => {
         <Left>
           <BurgerMenu clicked={clicked} handleClick={handleClick} className="burger"/>
           <ListContainer className={`${clicked ? "active" : ""}`}>
-            <Link to="/cursos">
+          <Link to="/" onClick={() => setClicked(false)} className="mobile">
+              <Title>Inicio</Title>
+            </Link>
+            <Link to="/cursos" onClick={() => setClicked(false)}>
               <Title>Cursos</Title>
             </Link>
-            <Link to="/egresados">
+            <Link to="/egresados" onClick={() => setClicked(false)}>
               <Title>Egresados</Title>
             </Link>
-            <Link to="/nosotros">
+            <Link to="/nosotros" onClick={() => setClicked(false)}>
               <Title>Nosotros</Title>
             </Link>
           </ListContainer>
         </Left>
 
         <Center>
-          <Link to="/">
+          <Link to="/" onClick={() => setClicked(false)}>
             <img src="/images/logo.webp" alt="logo-olimpo" />
           </Link>
         </Center>
@@ -111,6 +114,11 @@ const ListContainer = styled.div`
   &.active{
     top: 50px;
     left: 0;
+  }
+  .mobile{
+    @media only screen and (min-width: 1024px) {
+      display: none;
+    }
   }
   
   @media only screen and (min-width: 1024px) {
