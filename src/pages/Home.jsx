@@ -15,9 +15,9 @@ const Home = () => {
     <Container>
       <InfoContainer>
         <Title>Potencia Tus Conocimientos En Olimpo Academy</Title>
+        <SubTitle>Formación y Capacitación Profesional y Laboral</SubTitle>
         <Description>
-          En Olimpo Academy encontra los mejores cursos desde peluqueria, estética, auxiliar de enfermeria,
-          agente sanitario, mécanica de motos, etc...
+        Te invitamos a ser parte de nuestra comunidad educativa, formandote y capacitandote para tu inserción laboral
         </Description>
 
       </InfoContainer>
@@ -98,9 +98,11 @@ const Title = styled.h1`
 
   @media only screen and (min-width: 1024px){
     font-size: 50px;
-    margin: 30px 0;
+    margin: 30px 0 10px;
   }
-
+`
+const SubTitle = styled.h2`
+  color: #c9c4c4;
 `
 const Description = styled.p`
 padding-top: 25px;
