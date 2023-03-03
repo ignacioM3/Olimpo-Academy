@@ -13,7 +13,7 @@ import useCursos from '../hooks/useCursos';
 
 const Card = (props) => {  
 
-  const {name, img, duration, price, favorite = false} = props
+  const {name, img, duration, cupos, favorite = false} = props
   const [fav, setFav] = useState(favorite);
 
   const {addFavorite, deleteFavorite} = useCursos()
