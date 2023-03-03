@@ -8,6 +8,7 @@ import List from './pages/List'
 import { CursosProvider } from './context/ProyectosProvider'
 import ListEgresado from './pages/ListEgresado'
 import Favorite from './pages/Favorite'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className='bg'>
       <BrowserRouter>
+        <ScrollToTop />
         <CursosProvider>
           <Routes>
             <Route path='/' element={<LayoutPublic />}>
