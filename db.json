@@ -96,7 +96,7 @@
                     "id": 11,
                     "name": "Masajista Profesional",
                     "category": "salud",
-                    "duration": "2 meses",
+                    "duration": "8 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "masajista.jpg"
@@ -114,7 +114,7 @@
                     "id": 13,
                     "name": "Agente sanitario",
                     "category": "salud",
-                    "duration": "2 meses",
+                    "duration": "7 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "agente-sanitario.jpg"
@@ -143,7 +143,7 @@
                     "id": 16,
                     "name": "Preceptoria",
                     "category": "educación",
-                    "duration": "2 meses",
+                    "duration": "8 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "preceptor.jpg"
@@ -171,7 +171,7 @@
                     "id": 19,
                     "name": "Secretariado ejecutivo informatizado",
                     "category": "administrativa",
-                    "duration": "2 meses",
+                    "duration": "6 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "secretario-ejecutivo.jpg"
@@ -180,7 +180,7 @@
                     "id": 20,
                     "name": "Secretariado judicial",
                     "category": "administrativa",
-                    "duration": "2 meses",
+                    "duration": "6 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "secretario-judicial.jpg"
@@ -189,7 +189,7 @@
                     "id": 21,
                     "name": "Asistente en recursos humanos",
                     "category": "administrativa",
-                    "duration": "2 meses",
+                    "duration": "6 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "asistente-rh.jpg"
@@ -208,7 +208,7 @@
                     "id": 23,
                     "name": "Mecánica de motos",
                     "category": "varios",
-                    "duration": "2 meses",
+                    "duration": "8 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "motos.jpg"
@@ -226,7 +226,7 @@
                     "id": 25,
                     "name": "Reparación de celulares",
                     "category": "varios",
-                    "duration": "2 meses",
+                    "duration": "6 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "celus.jpg"
