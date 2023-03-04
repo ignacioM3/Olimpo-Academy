@@ -13,10 +13,9 @@ import useCursos from '../hooks/useCursos';
 
 const Card = (props) => {  
 
-  const {name, img, duration, cupos, favorite = false} = props
+  const {name, img, duration, favorite = false} = props
   const [fav, setFav] = useState(favorite);
-
-  const {addFavorite, deleteFavorite} = useCursos()
+  const {addFavorite, deleteFavorite, message} = useCursos()
 
   const handleFavorite = () =>{
     setFav(!fav)
@@ -25,8 +24,9 @@ const Card = (props) => {
     }else{
       addFavorite(props)
     }
-   
   }
+
+  
   return (
     <Container>
       <ImgContainer>
@@ -54,7 +54,7 @@ const Card = (props) => {
           </DetailContainer>
         </InfoContainer>
         <ButtonContainer>
-          <Button href={`https://web.whatsapp.com/send/?phone=+5493876520393&text=Hola! Estoy interesado en el curso ${name} &type=phone_number&app_absent=0`} target="_blank">
+          <Button href={`https://${message}/send/?phone=+5493876520393&text=Hola! Estoy interesado en el curso ${name} &type=phone_number&app_absent=0`} target="_blank">
             Quiero este curso
           </Button>
         </ButtonContainer>

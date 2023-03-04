@@ -3,6 +3,8 @@ import styled from "styled-components"
 
 
 const About = () => {
+  
+  
   return (
     <Container>
       <Title>Nosotros</Title>
