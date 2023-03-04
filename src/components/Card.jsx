@@ -48,9 +48,6 @@ const Card = (props) => {
               <AccessTimeIcon />
               <Time>{duration}</Time>
             </TimeContainer>
-           {/*  <PriceContainer>
-              <Time>Disponibles: {cupos}</Time>
-            </PriceContainer> */}
           </DetailContainer>
         </InfoContainer>
         <ButtonContainer>

@@ -1,9 +1,13 @@
 import styled from "styled-components"
+import useCursos from "../hooks/useCursos";
+
+//icons
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 
 
 const About = () => {
-  
+  const {message} = useCursos();
   
   return (
     <Container>
@@ -22,7 +26,13 @@ const About = () => {
           Con sede central en la ciudad de Metan, con filiales en Las Lajitas, El Quebrachal entre otras ciudades.
         </Des>
       </TextContainer>
-
+      <TextContainer>
+        <Title2>Contacto</Title2>
+        <Des>Actualmente nos encontramos asesorando todo por: </Des>
+        <WhatsappContainer href={`https://${message}/send/?phone=+5493876520393`} target="_blank">
+          <WhatsAppIcon /> +549 3876 52-0393
+        </WhatsappContainer>
+      </TextContainer>
     </Container>
   )
 }
@@ -35,19 +45,53 @@ const Title = styled.h1`
   text-align: center;
   color: white;
   margin: 20px 0;
+
 `
 
 const TextContainer = styled.div`
   text-align: center;
   color: #cdc6c6;
+
+  @media only screen and (min-width: 768px) {
+    padding: 0 140px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 0 220px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding: 0 320px;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    padding: 0 420px;
+  }
 `
 
 const Title2 = styled.h2`
   color: white;
+  @media only screen and (min-width: 1024px) {
+    margin: 30px 0 0;
+  }
+
+  @media only screen and (min-width: 1400px) {
+    margin: 60px 0 0;
+  }
 `
 
 const Des = styled.p`
   padding: 20px;
+  
+`
+
+const WhatsappContainer = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+svg{
+    color: #00bb2d;
+  }
 `
 
 

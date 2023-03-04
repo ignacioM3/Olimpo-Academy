@@ -182,6 +182,10 @@ const BgDiv = styled.div`
   top: -1000px;
   border-bottom: 1px solid #d3cfcf85;
   left: -1000px;
+
+  @media only screen and (min-width: 1024px) {
+    display: none;
+  }
   &.active{
     top: 0;
     left: 0;
