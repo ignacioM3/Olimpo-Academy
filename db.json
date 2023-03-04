@@ -5,7 +5,7 @@
                     "id": 1,
                     "name": "Peluquería Profesional Integral",
                     "category": "belleza",
-                    "duration": "2 meses",
+                    "duration": "9 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "barberia.jpg"
@@ -14,7 +14,7 @@
                     "id": 2,
                     "name": "Peluquería Masculina y Barbería",
                     "category": "belleza",
-                    "duration": "2 meses",
+                    "duration": "6 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "barberia2.jpg"
@@ -23,7 +23,7 @@
                     "id": 3,
                     "name": "Maquillaje Profesional",
                     "category": "belleza",
-                    "duration": "2 meses",
+                    "duration": "7 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "maquillaje-profesional.jpg"
@@ -32,7 +32,7 @@
                     "id": 4,
                     "name": "Depilación Integral",
                     "category": "belleza",
-                    "duration": "2 meses",
+                    "duration": "7 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "depilación-integral.jpg"
@@ -41,7 +41,7 @@
                     "id": 5,
                     "name": "NAILS art",
                     "category": "belleza",
-                    "duration": "2 meses",
+                    "duration": "6 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "nails-art.jpg"
@@ -72,7 +72,7 @@
                     "id": 8,
                     "name": "Auxiliar de Farmacias",
                     "category": "salud",
-                    "duration": "2 meses",
+                    "duration": "7 meses",
                     "cupos": 10,
                     "dest": true,
                     "img": "auxiliar-farmacias.jpg"
@@ -81,7 +81,7 @@
                     "id": 9,
                     "name": "Auxiliar de Enfermería",
                     "category": "salud",
-                    "duration": "2 meses",
+                    "duration": "7 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "auxiliar-enfermeria.jpg" 
@@ -90,7 +90,7 @@
                     "id": 10,
                     "name": "Acompañante Terapéutico",
                     "category": "salud",
-                    "duration": "2 meses",
+                    "duration": "6 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "acompañante-terapeutico.jpg" 
@@ -108,7 +108,7 @@
                     "id": 12,
                     "name": "Estimulación temprana",
                     "category": "salud",
-                    "duration": "2 meses",
+                    "duration": "7 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "estimulacion.jpg"
@@ -128,7 +128,7 @@
                     "id": 14,
                     "name": "Auxiliar en Jardín Maternal y Nivel Inicial",
                     "category": "educación",
-                    "duration": "2 meses",
+                    "duration": "7 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "jardin-maternal.jpg"
@@ -137,7 +137,7 @@
                     "id": 15,
                     "name": "Lengua de señas",
                     "category": "educación",
-                    "duration": "2 meses",
+                    "duration": "8 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "senas.jpg" 
@@ -155,7 +155,7 @@
                     "id": 17,
                     "name": "Auxiliar en Educación Especial",
                     "category": "educación",
-                    "duration": "2 meses",
+                    "duration": "8 meses",
                     "cupos": 10,
                     "dest": true,
                     "img": "educacion-especial.jpg"
@@ -165,7 +165,7 @@
                     "id": 18,
                     "name": "Secretariado administrativo contable",
                     "category": "administrativa",
-                    "duration": "2 meses",
+                    "duration": "6 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "secretario.jpg"
@@ -202,7 +202,7 @@
                     "id": 22,
                     "name": "Electricidad domiciliaria",
                     "category": "varios",
-                    "duration": "2 meses",
+                    "duration": "7 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "electricista.jpg"
@@ -220,7 +220,7 @@
                     "id": 24,
                     "name": "Peluquería canina",
                     "category": "varios",
-                    "duration": "2 meses",
+                    "duration": "8 meses",
                     "cupos": 10,
                     "dest": false,
                     "img": "peluqueria-canina.jpg"
