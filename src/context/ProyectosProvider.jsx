@@ -71,7 +71,7 @@ const CursosProvider = ({ children }) => {
         if (window.innerWidth >= 1024) {
             setMessage('web.whatsapp.com')
         } else {
-            setMessage('wa.me')
+            setMessage('api.whatsapp.com')
         }
     }, []);
 
