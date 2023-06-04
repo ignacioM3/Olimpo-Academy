@@ -192,5 +192,4 @@ const Line = styled.div`
   border: 2px solid gray;
 `
 
-const EgresadosContainer = styled.div``
 export default Home
